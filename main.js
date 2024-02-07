@@ -89,6 +89,8 @@ function DispalyPop(){
       <h2 class="tittle position-relative fw-bolder pt-2 opacity text-center">${Movies[i].title}</h2>
           <p class="p-2 fw-lighter">${Movies[i].overview}</p>
              <span class="p-2 fw-lighter">release date : ${Movies[i].release_date}</span>
+             <div class="">
+             <span class="max border border-success border-2 m-2 fw-lighter rounded-circle p-2">${(Movies[i].vote_average)}</span></div>
 </div>
 </div>
 </div> 
@@ -119,6 +121,8 @@ function Dispalyreated(){
       <h2 class="tittle position-relative fw-bolder pt-2 opacity text-center">${Movies[i].title}</h2>
           <p class="p-2 fw-lighter">${Movies[i].overview}</p>
              <span class="p-2 fw-lighter">release date : ${Movies[i].release_date}</span>
+             <div class="">
+             <span class="max border border-success border-2 m-2 fw-lighter rounded-circle p-2">${(Movies[i].vote_average)}</span></div>
 </div>
 </div>
 </div> 
@@ -148,6 +152,8 @@ function DispalyTrend(){
       <h2 class="tittle position-relative fw-bolder pt-2 opacity text-center">${Movies[i].title}</h2>
           <p class="p-2 fw-lighter">${Movies[i].overview}</p>
              <span class="p-2 fw-lighter">release date : ${Movies[i].release_date}</span>
+             <div class="">
+             <span class="max border border-success border-2 m-2 fw-lighter rounded-circle p-2">${(Movies[i].vote_average)}</span></div>
 </div>
 </div>
 </div> 
@@ -180,6 +186,8 @@ function DispalyUpComing(){
       <h2 class="tittle position-relative fw-bolder pt-2 opacity text-center">${Movies[i].title}</h2>
           <p class="p-2 fw-lighter">${Movies[i].overview}</p>
              <span class="p-2 fw-lighter">release date : ${Movies[i].release_date}</span>
+             <div class="">
+             <span class="max border border-success border-2 m-2 fw-lighter rounded-circle p-2">${(Movies[i].vote_average)}</span></div>
 </div>
 </div>
 </div> 
