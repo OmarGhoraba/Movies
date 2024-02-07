@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="font/all.min.css">
+    <link rel="icon" href="pic/logo.png">
+    
+    <title>Movies</title>
+</head>
+<body class="body">
+    <!-- ================= loading ============= -->
+    <div id="loading">
+        <i class="fa-solid fa-spin fa-spinner fa-3x text-light "></i>
+       </div>
+       
+    <div class="nav z-3  vh-100 position-fixed ">
+        <div class="side-body h-100 d-flex flex-column justify-content-between">
+            <ul class="list-unstyled text-white mt-2 ps-4 overflow-hidden">
+                <li onclick="GetApi()" class="p-3 fw-light position-relative">Now Playing</li>
+                <li onclick="GetPop()" class="p-3 fw-light position-relative"> Popular</li>
+                <li onclick="Getreated()" class="p-3 fw-light position-relative">Top rated</li>
+                <li onclick="GetTrend()" class="p-3 fw-light position-relative"> Trending</li>
+                <li  onclick="GetUpComing()"class="p-3 fw-light position-relative"> Up coming</li>
+                <li class="p-3 fw-light position-relative"><a href="#contact-us"
+                    class="text-decoration-none text-light">Contact us</a></li>
+            </ul>
+            <div class="side-body-footer mb-2">
+                <div class="footer-links text-white ms-2 mb-2">
+                    <i class="fa-brands fa-facebook p-1"></i>
+                    <i class="fa-brands fa-twitter p-1"></i>
+                    <i class="fa-solid fa-globe p-1"></i>
+                </div>
+                <div class="footer text-light-emphasis">
+                    <p class=" ms-2 me-5"> Copyright © 2022 All Rights <br> Reserved</p>
+                </div>
+            </div>
+        </div>
+        <div class="side-tap h-100 bg-white d-flex flex-column justify-content-between align-items-center">
+            <img src="pic/logo.png"  class="w-50 mt-4"alt="">
+            <i class="fa-solid fa-x close-open fw-bolder fs-3"></i>
+            <div class="two-links d-flex flex-column mb-3">
+                <i class="fa-solid fa-globe mb-2"></i>
+                <i class="fa-solid fa-share-nodes"></i>
+            </div>
+        </div>
+    </div>
+<!-- =============== search bar =========== -->
+<div class="container d-flex justify-content-center ">
+    <input onkeyup="SearchFun(this.value)" type="text" class="btn border-2 rounded-5 border-light w-50 text-start mt-5 text-white" placeholder="Search.." id="Search">
+</div>
+ 
+<!-- ====================== now playing =============== -->
+<div class="now-playing">
+    <div class="container">
+        <div class="row" id="row">
+        </div>
+    </div>
+</div>
+
+<!-- =============== Contact Us ================  -->
+ <div class="contact" id="contact-us">
+    <div class="container">
+        <div class="row">
+            <h1 class="text-white fw-light py-5"> Contact us </h1> 
+            <form action="" class="d-flex justify-content-between flex-wrap">
+                <input type="text" required  class="col-md-6 btn border-bottom  text-center text-light-emphasis my-2 " placeholder="Enter Your Name">
+                <input type="text" required  class="col-md-6 btn border-bottom  text-center text-light-emphasis my-2" placeholder="Enter Your Email">
+                <input type="text"  required class="col-md-6 btn border-bottom  text-center text-light-emphasis my-2" placeholder="Enter Your Phone" >
+                <input type="text" required  class="col-md-6 btn border-bottom  text-center text-light-emphasis my-2" placeholder="Enter Your Age">
+                <input type="text" required  class="col-md-6 btn border-bottom  text-center text-light-emphasis my-2" placeholder="Enter Your Password">
+                <input type="text"  required class="col-md-6 btn border-bottom  text-center text-light-emphasis my-2" placeholder="ReEnter Your Password">
+                <button class="btn btn-outline-light border-0 m-3">Submit</button>
+            </form>
+        </div>
+    </div>
+ </div>
+  <!-- ================== up   === -->
+  <div class="bottom-up justify-content-center align-items-center" id="Up">
+    <i class="fa-solid fa-arrow-up text-light "></i></div>
+<script src="jquery-3.7.1.min.js"></script>
+<script src="main.js"></script>
+</body>
+</html>
